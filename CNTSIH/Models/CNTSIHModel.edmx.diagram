@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f681ebcb5b82414ead2ecd5cda926721" Name="Diagram1">
+        <EntityTypeShape EntityType="CSIHModel.Catalogo" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CSIHModel.mAtencion" Width="1.5" PointX="9.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="CSIHModel.mAuditoria" Width="1.5" PointX="7.5" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CSIHModel.mCalendario" Width="1.5" PointX="5.25" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="CSIHModel.mCatalogo" Width="1.5" PointX="0.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CSIHModel.mCita" Width="1.5" PointX="7.5" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CSIHModel.mParametros" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CSIHModel.mPermisos" Width="1.5" PointX="5.25" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CSIHModel.mPersona" Width="1.5" PointX="5.25" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CSIHModel.mTratamiento" Width="1.5" PointX="12.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CSIHModel.rMedico_Calendario" Width="1.5" PointX="7.5" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CSIHModel.rMedico_Especialidad" Width="1.5" PointX="10.5" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CSIHModel.rRol_Persona" Width="1.5" PointX="10.5" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CSIHModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="CSIHModel.FK_Catalogo_mCatalogo" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_mCita_Catalogo" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_mPermisos_Catalogo" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_mPermisos_Catalogo1" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_mPermisos_Catalogo2" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_mPersona_Catalogo" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_mPersona_Catalogo1" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_mPersona_Catalogo2" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_mPersona_Catalogo3" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_mTratamiento_Catalogo" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_rMedico_Especialidad_Catalogo" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_rRol_Persona_Catalogo" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_mAtencion_mCita1" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_mAuditoria_mPersonas" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_rMedico_Calendario_mCalendario" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_mCita_mPersona" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_mCita_mPersona1" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_mTratamiento_mCita" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_rMedico_Calendario_mPersona" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_rMedico_Especialidad_mPersona" ManuallyRouted="false" />
+        <AssociationConnector Association="CSIHModel.FK_rRolPersona_mPersonas" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body style="background: -webkit-linear-gradient(90deg, lightgray 50%, lightstellblue 75%)">
+    <header style="background-color: darkblue; color: white; text-align: center">
+        <br /><h3>Sistema Hospitalario</h3><br />
+    </header>
+
+
+    <nav class="row" style="background-color: gray; height:35px;margin: 0px 0px 0px 0px">
+        <div class="btn-group">
+
+            <button class="btn btn-primary" onclick="location.href = '/Acceso/Index'">Iniciar Sesión</button>
+            <button class="btn btn-primary" onclick="location.href = '/mPersonas/CreatePaciente'">Registrarse</button>
+        </div>
+    </nav>
+    <main class="row" style="margin: 2% 2% 2% 2%; background-color:beige; width:96%">
+        <div class="container">
+            @RenderBody()
+        </div>
+    </main>
+
+    <footer style="background-color: darkblue; color: white; text-align: center ">
+        <br /><small>&copy; @DateTime.Now.Year  Todos los derechos reservados 2022 -      German Camacho B.</small><br />
+    </footer>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
