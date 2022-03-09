@@ -8,19 +8,19 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "Create", null,  new { @class = "btn btn-success" })
 </p>
 <table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.catalogo)
         </th>
-        <th>
+        @*<th>
             @Html.DisplayNameFor(model => model.Catalogo1.FirstOrDefault().catalogo_id)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.estado)
-        </th>
+        </th>*@
         <th></th>
     </tr>
 
@@ -29,16 +29,16 @@
     <td>
         @Html.DisplayFor(modelItem => item.catalogo)
     </td>
-    <td>
+    @*<td>
         @Html.DisplayFor(modelItem => item.Catalogo1.FirstOrDefault().catalogo_id)
     </td>
     <td>
         @Html.DisplayFor(modelItem => item.estado)
-    </td>
+    </td>*@
     <td>
-        @Html.ActionLink("Edit", "Edit", new { id = item.mcatalogo_id }) |
-        @Html.ActionLink("Details", "Details", new { id = item.mcatalogo_id }) |
-        @Html.ActionLink("Delete", "Delete", new { id = item.mcatalogo_id })
+        @Html.ActionLink("Edit", "Edit", new { id = item.mcatalogo_id }, new { @class = "btn btn-warning" }) |
+        @Html.ActionLink("Details", "Details", new { id = item.mcatalogo_id }, new { @class = "btn btn-info" }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.mcatalogo_id }, new { @class = "btn btn-danger", onclick = "return confirm('Seguro de desabilitar registro')" })
     </td>
 </tr>
 }

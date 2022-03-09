@@ -111,7 +111,9 @@ namespace CNTSIH.Controllers
         public async Task<ActionResult> DeleteConfirmed(int id)
         {
             mCatalogo mCatalogo = await db.mCatalogo.FindAsync(id);
-            db.mCatalogo.Remove(mCatalogo);
+            //db.mCatalogo.Remove(mCatalogo);
+            mCatalogo.estado = false;
+            db.Entry(mCatalogo).State = EntityState.Modified;
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
         }
